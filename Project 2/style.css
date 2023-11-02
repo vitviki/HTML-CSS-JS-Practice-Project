@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.apply_box {
+    max-width: 1200px;
+    min-width: 600px;
+    padding: 40px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, .1);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.form_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+}
+
+.form_element {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px 12px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.button_container {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: red;
+    border-radius: 8px;
+    border: transparent solid 2px;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+    border: 2px solid red;
+    transition: 0.2s ease-in;
+}
+
+.textarea_element {
+    grid-column: 1 / span 2;
+}
+
+textarea {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .textarea_element {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (max-width: 428px) {
+    .textarea_element {
+        grid-column: 1 / span;
+    }
+}
+
+
