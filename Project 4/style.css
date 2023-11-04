@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.hero_section {
+    background-image: url('./assets/developer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    color: #fff;
+    max-width: 1000px;
+    padding: 64px 0 0 16px;
+    margin: 0 auto;
+}
+
+.lg_text {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84.38px;
+}
+
+.mid_black_box {font-weight: 400;
+    text-align: center;
+    background-color: #272727;
+    color: #fff;
+    padding: 50px;
+}
+
+.mid_black_box h1 {
+    font-size: 72px;
+    font-weight: 400;;
+}
+
+.cards_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 70px;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 320px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.content {
+    padding: 25px;
+}
+
+.bottom_section {
+    display: flex;
+}
+
+.contact_section,
+.about_section {
+    max-width: 50%;
+    padding: 40px 100px 60px;
+}
+
+.contact_section {
+    color: #fff;
+    background-color: #515603;
+}
+
+.about_section {
+    color: #fff;
+    background-color: #722300 ;
+}
+
+.bottom_section_title {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.bottom_section_text {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.bottom_section_subtitle {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: end;
+    padding: 50px 0 10px;
+}
