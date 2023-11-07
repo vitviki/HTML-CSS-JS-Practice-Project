@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            Math Quiz
+        </div>
+    </header>
+    <div class="score_card">
+        <h2>Score: <span id="score">0</span></h2>
+    </div>
+    <div class="quiz_box">
+        <div class="question_box">
+            Question: <span id="question">Sample question</span>
+        </div>
+        <div class="option_box">
+            <div class="option">
+                <input type="radio" id="1" value="a" name="options">
+                <label for="1">Option 1</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="2" value="b" name="options">
+                <label for="2">Option 2</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="3" value="c" name="options">
+                <label for="3">Option 3</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="4" value="d" name="options">
+                <label for="4">Option 4</label>
+            </div>
+        </div>
+        <div class="result_box">
+            <div class="result">
+                <h3 id="result_text"></h3>
+            </div>
+            <div class="btns">
+                <button id="submit_btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
