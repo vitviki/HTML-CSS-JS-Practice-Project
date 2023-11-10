@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+}
+
+header {
+    width: 193px;
+    height: 100vh;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    top: 0;
+    position: sticky;
+}
+
+nav h1 {
+    text-align: center;
+    padding: 20px 10px 10px;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+}
+
+nav img {
+    width: 193px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+nav ul li:hover {
+    background: #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 50px;
+    gap: 80px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tab article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tab article ul {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tab h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.code_section {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    padding: 27px 0 27px 26px;
+    margin-left: 21px;
+    background-color: #ccc;
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+}
